@@ -1,11 +1,15 @@
 import React from "react";
+import "./scss/main.scss";
 
-function App() {
+
+
+const App = () => {
   return (
-    <div className="App">
-      <p>template</p>
-    </div>
+  <div className="wrapper">
+    <p>template</p>
+  </div>
   );
 }
+
 
 export default App;
