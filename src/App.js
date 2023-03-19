@@ -1,15 +1,15 @@
 import React from "react";
 import "./scss/main.scss";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import { Header, Footer } from "./components";
 
 
 
 
 
 const App = () => {
-  return <div>
+  return <div className="wrapper">
     <Header />
+    <p>template</p>
     <Footer />
   </div>
 }
