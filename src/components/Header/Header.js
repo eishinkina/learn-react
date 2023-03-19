@@ -5,8 +5,9 @@ import "./Header.scss"
 
 function Header() {
     return (
-        <div className='header'>
+        <div className='header flex justify-between'>
             <p>hello world</p>
+            <p>menu</p>
         </div>
       );
 }
