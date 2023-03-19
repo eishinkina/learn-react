@@ -9,7 +9,7 @@ import { Header, Footer } from "./components";
 const App = () => {
   return <div className="wrapper">
     <Header />
-    <p>template</p>
+    <p className="text-2xl">template</p>
     <Footer />
   </div>
 }
