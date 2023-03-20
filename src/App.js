@@ -2,12 +2,12 @@ import React from "react";
 import "./scss/main.scss";
 import { Header, Footer } from "./components";
 import { Container } from "./layouts/Container.jsx";
+import  "./test.js";
 
 
 
 
-
-const App = () => {
+function App() {
   return (
     <div className="ui-wrapper">
       <Header />
@@ -18,7 +18,7 @@ const App = () => {
       </div>
       <Footer />
     </div>
-  )
+  );
 }
 
 
