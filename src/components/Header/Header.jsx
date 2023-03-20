@@ -29,7 +29,7 @@ Header.propTypes = {
 };
 Header.defaultTypes = {
     isLogo: false,
-    isFixed: true,
+    isFixed: false,
 };
 
 export default Header;

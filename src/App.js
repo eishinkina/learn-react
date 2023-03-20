@@ -10,7 +10,7 @@ import  "./test.js";
 function App() {
   return (
     <div className="ui-wrapper">
-      <Header isLogo isFixed />
+      <Header isLogo />
       <div className="ui-content-wrapper">
         <Container>
           <p className="text-2xl">
