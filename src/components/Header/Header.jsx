@@ -3,13 +3,21 @@ import "./Header.scss";
 import { Container } from "./../../layouts/Container";
 import { ReactComponent as LogoIcon } from "./../../assets/img/logo.svg";
 import propTypes from "prop-types"
+import classNames from 'classnames';
 
 
 
-function Header({isLogo, isFixed}) {
+function Header({isLogo, isFixed, className}) {
+    const classes = classNames("Header",
+    className, 
+    {
+        isFixed: isFixed, 
+    }
+    ); 
     return (
-        <Container title='123' alt='asd' style={{display: 'block'}}>
-           <div className={`flex justify-between py-2 mb-4 ${isFixed && 'isFixed'}`}>
+        <header className={classes}>
+        <Container>
+           <div className=" flex justify-between py-2 mb-4">
                 <div className='Logo'>
                     {isLogo && <LogoIcon />}
                     <span>React app </span>
@@ -20,12 +28,14 @@ function Header({isLogo, isFixed}) {
                 </ul>
             </div>
         </Container>
+        </header>
       );
 }
 
 Header.propTypes = {
     isLogo: propTypes.bool,
     isFixed: propTypes.bool,
+    className: propTypes.string,
 };
 Header.defaultTypes = {
     isLogo: false,
