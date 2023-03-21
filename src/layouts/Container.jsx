@@ -1,5 +1,17 @@
 import React from 'react';
 
-const Container = ({children}) => <div className='ui-container'>{children}</div>
+const Container = ({children, style, ...attrs}) => {
+
+    const nextStyle = {
+        ...style,
+        color: 'black',
+    };
+
+    return (
+        <div className='ui-container' {...attrs} style={nextStyle}>
+            {children}
+        </div>
+    )
+}
 
 export {Container};

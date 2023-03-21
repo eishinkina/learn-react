@@ -8,7 +8,7 @@ import propTypes from "prop-types"
 
 function Header({isLogo, isFixed}) {
     return (
-        <Container>
+        <Container title='123' alt='asd' style={{display: 'block'}}>
            <div className={`flex justify-between py-2 mb-4 ${isFixed && 'isFixed'}`}>
                 <div className='Logo'>
                     {isLogo && <LogoIcon />}
