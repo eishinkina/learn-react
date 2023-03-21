@@ -7,7 +7,7 @@ import classNames from 'classnames';
 
 
 
-function Header({isLogo, isFixed, className}) {
+function Header({isLogo, isFixed, className, ...attrs}) {
     const classes = classNames("Header",
     className, 
     {
@@ -15,7 +15,7 @@ function Header({isLogo, isFixed, className}) {
     }
     ); 
     return (
-        <header className={classes}>
+        <header className={classes} {...attrs}>
         <Container>
            <div className=" flex justify-between py-2 mb-4">
                 <div className='Logo'>
@@ -37,7 +37,7 @@ Header.propTypes = {
     isFixed: propTypes.bool,
     className: propTypes.string,
 };
-Header.defaultTypes = {
+Header.defaultProps = {
     isLogo: false,
     isFixed: false,
 };
