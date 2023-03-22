@@ -23,3 +23,16 @@
     height: 16px;
     margin-right: 4px;
 }
+
+.headerList {
+  display: flex;
+  a {
+    text-decoration: solid;
+    &.active {
+      cursor: default;
+      pointer-events: none;
+      opacity: 0.8;
+
+    }
+  }
+}

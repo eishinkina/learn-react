@@ -11,22 +11,6 @@ function App() {
             <Header isLogo />
             <div className='ui-content-wrapper'>
                 <Container>
-                    <a className='ui-link' to='/about'>
-                        about 2
-                    </a>
-                    <br />
-                    <Link className='ui-link' to='/'>
-                        home 2
-                    </Link>
-                    <br />
-                    <Link className='ui-link' to='/about'>
-                        about 3
-                    </Link>
-                    <br />
-                    <Link className='ui-link' to='/'>
-                        home 3
-                    </Link>
-
                     <Routes>
                         <Route path='/' element={<h1>Home page</h1>} />
                         <Route path='/about' element={<h1>About page</h1>} />
