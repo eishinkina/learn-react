@@ -5,7 +5,7 @@ import { ReactComponent as LogoIcon } from 'assets/img/logo.svg'
 import propTypes from 'prop-types'
 import classNames from 'classnames'
 import { NavLink } from 'react-router-dom'
-// import { app } from './../../layouts/_config'
+import { app } from './../../_config';
 
 const menuLinks = [
     {
@@ -38,7 +38,7 @@ function Header({ isLogo, isFixed, className, ...attrs }) {
                 <div className=' flex justify-between py-2 mb-4'>
                     <div className='Logo'>
                         {isLogo && <LogoIcon />}
-                        <span>React app </span>
+                        <span>{ app.name} </span>
                     </div>
                     {menuList}
                 </div>
