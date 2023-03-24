@@ -1,6 +1,6 @@
 import React from 'react'
 import './Header.scss'
-import { Container } from './../../layouts/Container'
+import { Container } from '../../layouts/Container'
 import { ReactComponent as LogoIcon } from './../../assets/img/logo.svg'
 import propTypes from 'prop-types'
 import classNames from 'classnames'
