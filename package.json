@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build"
+    "build:staging": "env-cmd -f config/.env.config.staging react-scripts build",
+    "build:production": "env-cmd -f config/.env.config.production react-scripts build"
   },
   "eslintConfig": {
     "extends": [
@@ -34,6 +35,7 @@
     "uimini": "^2.0.8"
   },
   "devDependencies": {
+    "env-cmd": "^10.1.0",
     "react-scripts": "5.0.1"
   }
 }
